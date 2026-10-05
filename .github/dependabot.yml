@@ -13,5 +13,5 @@ registries:
   npm-npmjs:
     type: npm-registry
     url: https://r.cnpmjs.org
-    token: dummy
+    token: "${{secrets.DUMMY_SECRET}}"
     replaces-base: true

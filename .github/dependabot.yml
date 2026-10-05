@@ -1,0 +1,17 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    registries:
+      - npm-npmjs
+    
+registries:
+  npm-npmjs:
+    type: npm-registry
+    url: https://r.cnpmjs.org
+    token: dummy
+    replaces-base: true
